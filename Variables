@@ -51,7 +51,7 @@ public class Variables {
     System.out.println("Sum of number = " + tableSum);
     int maxValue = 0, minValue = 10;
     System.out.println("Average of number = " + (double) tableSum / (double) table5Variable.length);
-    int counter =0;
+    int counter = 0;
         while (counter < table5Variable.length) {
             if (maxValue < table5Variable[counter]) {
                 maxValue = table5Variable[counter];
