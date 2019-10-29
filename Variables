@@ -1,0 +1,68 @@
+/**
+ * Created by Adam on wtorek, 29/paź/2019
+ */
+public class Variables {
+    public static void main(String[] args) {
+
+    boolean isTrue = true;
+    byte variableByte = 127, variableByte2; // from -128 to 127
+    short variableShort = 32767, variableShort2; //from -32768 to 32767
+    int variableInt = 2147483647, variableInt2; //from -2147483648 to 2147483647
+    long variableLong = 9223372036854775807l, variableLong2; //from -2^63 to 2^63-1
+    float variableFloat = 1f/3f;
+    double variableDouble = Math.PI;
+    char variableChar = 'V';
+    String variableString = ". But if we add one then the variable will take the value: ";
+    variableByte2 = (byte) (variableByte + 1);
+    variableShort2 = (short) (variableShort + 1);
+    variableInt2 = variableInt + 1;
+//    variableLong = (long) Math.pow (2, 63);
+    variableLong2 = variableLong + 1;
+    int scoreModule;
+
+    System.out.println("We ate testing variables...");
+    if (isTrue) {
+        System.out.println("Ok. isTrue is \"True\"");
+        System.out.println("Variable variableByte = " + variableByte + variableString + variableByte2);
+        System.out.println("Variable variableShort = " + variableShort + variableString + variableShort2);
+        System.out.println("Variable variableInt = " + variableInt + variableString + variableInt2);
+        System.out.println("Variable variableLong = " + variableLong + variableString + variableLong2);
+        System.out.println("Variable variableFloat (1/3) = " + variableFloat + "\u001B[31m" + " !!!" + "\u001B[0m");
+        System.out.println(variableChar + "ariable variableDouble (PI) = " + variableDouble);
+        variableInt = 10%7;
+        System.out.println("Module of \"10|7\" = " + variableInt);
+        variableInt++;
+        System.out.println("...add 1 = " + variableInt);
+        variableInt--;
+        System.out.println("...subtract 1 = " + variableInt);
+    }
+    else {
+        System.out.println("Unfortunately: isTru is not \"True\"");
+    }
+    int tableSum = 0;
+    int table5Variable[] = new int[5];
+    table5Variable = new int[]{4, 3, 6, 1, 3};
+        System.out.print("Array of numbers: ");
+    for (int i = 0; i<table5Variable.length; i++){
+        System.out.print("Pos:" + i+1 + ":" + table5Variable[i] + "; ");
+        tableSum += table5Variable[i];
+    }
+    System.out.println("");
+    System.out.println("Sum of number = " + tableSum);
+    int maxValue = 0, minValue = 10;
+    System.out.println("Average of number = " + (double) tableSum / (double) table5Variable.length);
+        for (int i = 1; i < table5Variable.length; i++) {
+            if (maxValue < table5Variable[i]) {
+                maxValue = table5Variable[i];
+            }
+            if (minValue > table5Variable[i]) {
+                minValue = table5Variable[i];
+            }
+        }
+    System.out.println("");
+    System.out.println("Max value is : " + maxValue);
+    System.out.println("Min value is : " + minValue);
+    System.out.println("Absolute of variableByte2 (-128) is: " + Math.abs(variableByte2));
+    System.out.println("Square of absolute of variableByte2 (-128) is: " + Math.sqrt(Math.abs(variableByte2)));
+    }
+}
