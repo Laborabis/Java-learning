@@ -16,6 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+        primaryStage.setTitle("My first Window 123");
         primaryStage.show();
     }
 }
