@@ -5,6 +5,7 @@ import javafx.stage.Stage;
 
 /**
  * Created by Adam on czwartek, 31/paź/2019
+ * My first empty window in JavaFX
  */
 
 public class Main extends Application {
