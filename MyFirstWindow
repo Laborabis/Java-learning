@@ -4,7 +4,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 /**
- * Created by Adam on czwartek, 31/10/2019
+ * Created by Adam on czwartek, 31/paź/2019
  */
 
 public class Main extends Application {
