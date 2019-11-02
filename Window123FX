@@ -17,11 +17,11 @@ public class Window123 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        StackPane stackpane = new StackPane();
+        StackPane stackPane = new StackPane();
         Button button = new Button("My first button");
-        stackpane.getChildren().add(button);
+        stackPane.getChildren().add(button);
 
-        Scene scene = new Scene(stackpane, 400, 600);
+        Scene scene = new Scene(stackPane, 640, 480);
 
         primaryStage.setScene(scene);
         primaryStage.setTitle("My First FX Window 123");
