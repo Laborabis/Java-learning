@@ -20,6 +20,6 @@ public class Circle {
                 else System.out.print("   ");
                 }
             System.out.println("");
-            }
+            } 
     }
 }
